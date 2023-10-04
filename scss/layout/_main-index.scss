@@ -1,6 +1,6 @@
 main {
     .section1 {
-        background-image: url(../../assets/img/section1_background.jpg);
+        background-image: url(../assets/img/section1_background.jpg);
         .mainLogo {
             @include game-logo;
         }

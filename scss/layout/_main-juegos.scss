@@ -1,6 +1,6 @@
 main {
     .section3 {
-        background-image: url(../../assets/img/section3_banner.jpg);
+        background-image: url(../assets/img/section3_banner.jpg);
         .section3__title {
             @include main-title;
             padding: 50px 0px;
