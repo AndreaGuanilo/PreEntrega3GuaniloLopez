@@ -1,0 +1,19 @@
+main {
+    .section13 {
+        background-color: $bg-mid;
+        padding-bottom: 1px;
+        .section13__maintitle {
+            @include main-title;
+            padding-top: 50px;
+        }
+        .section13__content {
+            @include grid (1fr, none, none, 10px, center, center);
+            margin: auto;
+            width: 80%;
+            margin-bottom: 20px;
+            .section13__title {
+                @include subtitle;
+            }
+        }
+    }
+}

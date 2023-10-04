@@ -1,0 +1,32 @@
+main {
+    .section1 {
+        background-image: url(../../assets/img/section1_background.jpg);
+        .mainLogo {
+            @include game-logo;
+        }
+        .section1__title {
+            @include main-title;
+        }
+        .section1__info {
+            @include flex (row, space-around, center, none, wrap);
+            margin-left: 400px;
+            padding: 0px 20px 20px 350px;
+            .ps_logo {
+                @include company-logo;
+            }
+            .sie_logo {
+                @include company-logo;
+            }
+            .sme_logo {
+                @include company-logo;
+            }
+            .section1__text {
+                width: 1000px;
+                .section1__text-p {
+                    @include text;                    
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

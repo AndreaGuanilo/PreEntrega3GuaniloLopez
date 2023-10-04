@@ -1,0 +1,245 @@
+@media (max-width: 320px) {
+    footer {
+        .footer {
+            .spin-icon {
+                height: 80px;
+            }
+            .footer__section {
+                margin-bottom: 5px;
+                .footer__section_title {
+                    font-size: 14px;
+                }
+                .footer__section_list {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section1 {
+            .mainLogo {
+                width: 60%;
+            }
+            .section1__title {
+                font-size: 30px;
+            }
+            .section1__info {
+                .ps_logo {
+                    height: 30px;
+                }
+                .sie_logo {
+                    height: 30px;
+                }
+                .sme_logo {
+                    height: 30px;
+                }
+                .section1__text {
+                    width: 280px;
+                    .section1__text-p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section2 {
+            .section2__title {
+                font-size: 30px;
+            }
+            .section2__video {
+                width: 280px;
+                .iframe {
+                    width: 280px;
+                    height: 150px;
+                }
+                .section2__text-p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section3 {
+            background-position: center;
+            .section3__title {
+                font-size: 30px;
+            }
+            .section3__list {
+                width: 280px;
+            }
+        }
+    }
+}    
+@media (max-width: 320px) {
+    main {
+        .section-card {
+            .game_logo {
+                width: 60%;
+            }
+            .game_info {
+                .game_picture {
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+                div {
+                    .game_text {
+                        width: 280px;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .game_info-mod {
+                flex-direction: column-reverse;
+            }
+        }
+        .card3 {
+            .game_info {
+                div {
+                    .game_text {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+        .card6 {
+            .game_info {
+                div {
+                    .game_text {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section13 {
+            .section13__maintitle {
+                font-size: 30px;
+                padding: 10px 0px;
+            }
+            .section13__content {
+                width: 90%;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-bottom: 10px;
+                .section13__title {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section13 {
+            .c1 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t1"
+                "boc"
+                "boa"
+                ;
+            }
+            .c2 {
+                grid-template-columns: 2fr;
+                grid-template-areas: 
+                "t2 t2"
+                "boath boath"
+                "sod boo"
+                "bh bh"
+                ;
+            }
+            .c3 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t3"
+                "boch"
+                "ss"
+                "goz"
+                ;
+            }
+            .c4 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t4"
+                "boathe"
+                "aos"
+                ;
+                .aos {
+                    width: 250px;
+                }
+            }
+            .c5 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t5"
+                "boe"
+                "coh"
+                "nc"
+                ;
+                .coh {
+                    width: 100px;
+                }
+            }
+            .c6 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t6"
+                "bc"
+                "t7"
+                "la"
+                "gs"
+                "tb"
+                ;
+            }
+            .c8 {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "t8"
+                "lax"
+                "gsh"
+                "ds"
+                ;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    main {
+        .section14 {
+            .section14__title {
+                font-size: 30px;
+            }
+            .section14__form {
+                width: 280px;
+                padding: 10px;
+                .section14__form_question {
+                    font-size: 14px;
+                    input {
+                        font-size: 12px;
+                    }
+                    select {
+                        font-size: 12px;
+                    }
+                    textarea {
+                        font-size: 12px;
+                    }
+                    button {
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

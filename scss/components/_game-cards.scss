@@ -1,0 +1,56 @@
+main {
+    .section-card {
+        background-color: $bg-light;
+        .game_logo {
+            @include game-logo;
+        }
+        .game_info {
+            @include flex (row, space-around, center, none, none);
+            padding: 50px;
+            .game_picture {
+                @include game-picture;
+            }
+            div {
+                .game_text {
+                    @include text;
+                }
+            }
+        }
+    }
+    .card2 {
+        @extend .section-card;
+        background-color: $bg-mid;
+    }
+    .card3 {
+        @extend .section-card;
+        background-color: $bg-dark;
+        .game_info {
+            div {
+                .game_text {
+                    @include text;
+                    color: $bg-mid;
+                }
+            }
+        }
+    }
+    .card5 {
+        @extend .section-card;
+        background-color: $bg-mid;
+    }
+    .card6 {
+        @extend .section-card;
+        background-color: $bg-dark;
+        .game_info {
+            div {
+                .game_text {
+                    @include text;
+                    color: $bg-mid;
+                }
+            }
+        }
+    }
+    .card8 {
+        @extend .section-card;
+        background-color: #A9A9A9;
+    }
+}

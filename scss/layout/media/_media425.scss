@@ -1,0 +1,271 @@
+@media (max-width: 425px) {
+    footer {
+        .footer {
+            .spin-icon {
+                height: 100px;
+            }
+            .footer__section {
+                margin-bottom: 5px;
+                .footer__section_title {
+                    font-size: 16px;
+                }
+                .footer__section_list {
+                    font-size: 14px;
+                }
+            }
+            .footer__section2 {
+                display: none;
+            } 
+            .footer__section3 {
+                display: none;
+            } 
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section1 {
+            .mainLogo {
+                width: 60%;
+            }
+            .section1__title {
+                font-size: 40px;
+            }
+            .section1__info {
+                .ps_logo {
+                    height: 50px;
+                    margin: 20px 0px;
+                }
+                .sie_logo {
+                    height: 50px;
+                    margin: 20px 0px;
+                }
+                .sme_logo {
+                    height: 50px;
+                    margin: 20px 0px;
+                }
+                .section1__text {
+                    width: 380px;
+                    .section1__text-p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section2 {
+            .section2__title {
+                font-size: 40px;
+            }
+            .section2__video {
+                width: 380px;
+                .iframe {
+                    width: 380px;
+                    height: 200px;
+                }
+                .section2__text-p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section3 {
+            background-position: center;
+            .section3__title {
+                font-size: 30px;
+            }
+            .section3__list {
+                width: 380px;
+                margin: auto;
+                background-color: #a9a9a942;
+                li {
+                    .section3__list_item {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}    
+@media (max-width: 768px) {
+    main {
+        .section-card {
+            .game_logo {
+                width: 60%;
+            }
+            .game_info {
+                padding: 10px;
+                flex-direction: column;
+                .game_picture {
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+                div {
+                    .game_text {
+                        width: 380px;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .game_info-mod {
+                flex-direction: column-reverse;
+            }
+        }
+        .card3 {
+            .game_info {
+                div {
+                    .game_text {
+                        width: 380px;
+                    }
+                }
+            }
+        }
+        .card6 {
+            .game_info {
+                div {
+                    .game_text {
+                        width: 380px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section13 {
+            .section13__maintitle {
+                font-size: 40px;
+                padding: 10px 0px;
+            }
+            .section13__content {
+                width: 90%;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-bottom: 10px;
+                .section13__title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section13 {
+            .c1 {
+                .boc {
+                    width: 150px;
+                }
+                .boa {
+                    width: 150px;
+                }
+            }
+            .c2 {
+                .boath {
+                    width: 150px;
+                }
+                .bh {
+                    width: 150px;
+                }
+                .sod {
+                    width: 75px;
+                }
+                .boo {
+                    width: 75px;
+                }
+            }
+            .c3 {
+                .boch {
+                    width: 150px;
+                }
+                .ss {
+                    width: 150px;
+                }
+                .goz {
+                    width: 150px;
+                }
+            }
+            .c4 {
+                .boathe {
+                    width: 150px;
+                }
+                .aos {
+                    width: 150px;
+                }
+            }
+            .c5 {
+                .boe {
+                    width: 150px;
+                }
+                .coh {
+                    width: 150px;
+                }
+                .nc {
+                    width: 150px;
+                }
+            }
+            .c6 {
+                .bc {
+                    width: 150px;
+                }
+                .la {
+                    width: 200px;
+                }
+                .gs {
+                    width: 125px;
+                }
+                .tb {
+                    width: 125px;
+                }
+            }
+            .c8 {
+                .lax {
+                    width: 125px;
+                }
+                .gsh {
+                    width: 125px;
+                }
+                .ds {
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    main {
+        .section14 {
+            .section14__title {
+                font-size: 40px;
+            }
+            .section14__form {
+                width: 380px;
+                padding: 15px;
+                .section14__form_question {
+                    font-size: 16px;
+                    input {
+                        font-size: 14px;
+                    }
+                    select {
+                        font-size: 14px;
+                    }
+                    textarea {
+                        font-size: 14px;
+                    }
+                    button {
+                        font-size: 16px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

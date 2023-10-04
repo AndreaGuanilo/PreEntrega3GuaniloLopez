@@ -1,0 +1,26 @@
+/*VARIABLES*/
+@import "./utilities/variables";
+/*MIXINS*/
+@import "./utilities/mixins";
+/*BASE*/
+@import "./base/reset";
+@import "./base/animations";
+/*LAYOUTS*/
+@import "./layout/header";
+@import "./layout/footer";
+/*LAYOUTS - PÁGINAS*/
+@import "./layout/main-index";
+@import "./layout/main-historia";
+@import "./layout/main-juegos";
+@import "./layout/main-armas";
+@import "./layout/main-contacto";
+
+/*COMPONENTS*/
+@import "./components/game-cards";
+@import "./components/armas-grid";
+@import "./components/buttons";
+
+/*LAYOUTS - MEDIA QUERIES*/
+@import "./layout/media/media768";
+@import "./layout/media/media425";
+@import "./layout/media/media320";

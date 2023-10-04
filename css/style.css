@@ -1,0 +1,1233 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*MIXINS*/
+/*BASE*/
+@font-face {
+  font-family: gow;
+  src: url(../../assets/fonts/GODOFWAR.TTF);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*LAYOUTS*/
+body header .navbar {
+  margin: auto;
+  background-color: #F2F3F4;
+}
+body header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../../assets/img/gow_icon.png);
+  background-size: cover;
+}
+body header .navbar .collapse .navbar-nav {
+  gap: 3.125rem;
+  margin: auto;
+}
+body header .navbar .collapse .navbar-nav .nav-item .navbar__link {
+  color: #1b1b1b;
+  font-size: 1.625rem;
+  font-family: gow;
+  font-weight: bold;
+  text-align: center;
+}
+body header .navbar .collapse .navbar-nav .nav-item .navbar__link:hover {
+  text-shadow: 4px 4px 5px red;
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  flex-wrap: none;
+  background-color: #00439c;
+}
+footer .footer .spin-icon {
+  height: 150px;
+  transform: rotate(-15deg);
+  animation: rotation linear 6s infinite; /*Aquí configuramos la duración de la animación y el bucle*/
+}
+footer .footer .footer__section {
+  margin-bottom: 0.625rem;
+}
+footer .footer .footer__section .footer__section_title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F2F3F4;
+  margin: auto;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+footer .footer .footer__section .footer__section_list {
+  list-style: none;
+  overflow: auto;
+}
+footer .footer .footer__section .footer__section_list li .footer__section_listitem {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F2F3F4;
+  line-height: 1.6;
+}
+footer .footer .footer__section .footer__section_list-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+  list-style: none;
+  overflow: auto;
+}
+footer .footer .footer__section .footer__section_list-media li a .media_logo {
+  height: 3.125rem;
+  padding: 0rem 0.625rem;
+}
+
+/*LAYOUTS - PÁGINAS*/
+main .section1 {
+  background-image: url(../../assets/img/section1_background.jpg);
+}
+main .section1 .mainLogo {
+  display: block;
+  padding: 2.5rem 0px;
+  margin: auto;
+  width: 700px;
+}
+main .section1 .section1__title {
+  font-family: gow;
+  color: #660000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.625rem 0rem;
+}
+main .section1 .section1__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  padding: 0px 20px 20px 350px;
+}
+main .section1 .section1__info .ps_logo {
+  height: 125px;
+  margin: 2.5rem 0px;
+}
+main .section1 .section1__info .sie_logo {
+  height: 125px;
+  margin: 2.5rem 0px;
+}
+main .section1 .section1__info .sme_logo {
+  height: 125px;
+  margin: 2.5rem 0px;
+}
+main .section1 .section1__info .section1__text {
+  width: 1000px;
+}
+main .section1 .section1__info .section1__text .section1__text-p {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  font-size: 20px;
+}
+
+main .section2 {
+  background-color: #1B1B1B;
+  padding-bottom: 1px;
+}
+main .section2 .section2__logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+main .section2 .section2__title {
+  font-family: gow;
+  color: #660000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.625rem 0rem;
+  color: #F8A20F;
+  margin: 10px 0px;
+}
+main .section2 .section2__video {
+  margin: auto;
+  text-align: center;
+  padding: 10px auto 20px;
+  width: 1000px;
+}
+main .section2 .section2__video .iframe {
+  margin: 10px auto;
+  width: 800px;
+  height: 400px;
+}
+main .section2 .section2__video .section2__text-p {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  font-size: 20px;
+  color: #F2F3F4;
+  padding: 20px;
+}
+
+main .section3 {
+  background-image: url(../../assets/img/section3_banner.jpg);
+}
+main .section3 .section3__title {
+  font-family: gow;
+  color: #660000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.625rem 0rem;
+  padding: 50px 0px;
+}
+main .section3 .section3__p {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  color: #F2F3F4;
+  font-weight: bold;
+  margin-left: 30px;
+}
+main .section3 .section3__list {
+  list-style: none;
+  overflow: auto;
+  padding: 20px 50px;
+}
+main .section3 .section3__list li .section3__list_item {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  text-decoration: none;
+  color: #F2F3F4;
+  line-height: 2;
+}
+
+main .section13 {
+  background-color: #A9A9A9;
+  padding-bottom: 1px;
+}
+main .section13 .section13__maintitle {
+  font-family: gow;
+  color: #660000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.625rem 0rem;
+  padding-top: 50px;
+}
+main .section13 .section13__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-template-areas: none;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+main .section13 .section13__content .section13__title {
+  font-family: gow;
+  color: #660000;
+  font-size: 46px;
+  text-align: center;
+}
+
+main .section14 {
+  background-image: url(../../assets/img/section14_banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .section14 .section14__title {
+  font-family: gow;
+  color: #660000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.625rem 0rem;
+}
+main .section14 .section14__form {
+  background-color: rgba(248, 163, 15, 0.4352941176);
+  margin: auto;
+  width: 800px;
+  padding: 35px;
+  border-radius: 10px;
+  display: block;
+}
+main .section14 .section14__form .section14__form_question {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  color: #1B1B1B;
+  line-height: 1.5;
+  font-weight: bold;
+}
+main .section14 .section14__form .section14__form_question label {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  flex-wrap: none;
+  padding: 10px;
+}
+main .section14 .section14__form .section14__form_question input {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  border: #1B1B1B solid 2px;
+  border-radius: 5px;
+}
+main .section14 .section14__form .section14__form_question select {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  border: #1B1B1B solid 2px;
+  border-radius: 5px;
+}
+main .section14 .section14__form .section14__form_question textarea {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  border: #1B1B1B solid 2px;
+  border-radius: 5px;
+  min-height: 160px;
+}
+main .section14 .section14__form .section14__form_question button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  color: inherit;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  color: #F2F3F4;
+  line-height: 1.5;
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+  background-color: #1B1B1B;
+}
+
+/*COMPONENTS*/
+main .section-card, main .card8, main .card6, main .card5, main .card3, main .card2 {
+  background-color: #F2F3F4;
+}
+main .section-card .game_logo, main .card8 .game_logo, main .card6 .game_logo, main .card5 .game_logo, main .card3 .game_logo, main .card2 .game_logo {
+  display: block;
+  padding: 2.5rem 0px;
+  margin: auto;
+  width: 700px;
+}
+main .section-card .game_info, main .card8 .game_info, main .card6 .game_info, main .card5 .game_info, main .card3 .game_info, main .card2 .game_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  flex-wrap: none;
+  padding: 50px;
+}
+main .section-card .game_info .game_picture, main .card8 .game_info .game_picture, main .card6 .game_info .game_picture, main .card5 .game_info .game_picture, main .card3 .game_info .game_picture, main .card2 .game_info .game_picture {
+  height: 500px;
+  border-radius: 1.25rem;
+}
+main .section-card .game_info div .game_text, main .card8 .game_info div .game_text, main .card6 .game_info div .game_text, main .card5 .game_info div .game_text, main .card3 .game_info div .game_text, main .card2 .game_info div .game_text {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+}
+main .card2 {
+  background-color: #A9A9A9;
+}
+main .card3 {
+  background-color: #1B1B1B;
+}
+main .card3 .game_info div .game_text {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  color: #A9A9A9;
+}
+main .card5 {
+  background-color: #A9A9A9;
+}
+main .card6 {
+  background-color: #1B1B1B;
+}
+main .card6 .game_info div .game_text {
+  width: 750px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: auto;
+  color: #1B1B1B;
+  color: #A9A9A9;
+}
+main .card8 {
+  background-color: #A9A9A9;
+}
+
+main .section13 .c1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "t1 t1" "boc boa";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c1 .t1 {
+  grid-area: t1;
+}
+main .section13 .c1 .boc {
+  grid-area: boc;
+}
+main .section13 .c1 .boa {
+  grid-area: boa;
+}
+main .section13 .c2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "t2 t2 t2" "boath boath bh" "sod boo bh";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c2 .t2 {
+  grid-area: t2;
+}
+main .section13 .c2 .boath {
+  grid-area: boath;
+}
+main .section13 .c2 .bh {
+  grid-area: bh;
+  width: 400px;
+}
+main .section13 .c2 .sod {
+  height: 300px;
+  grid-area: sod;
+}
+main .section13 .c2 .boo {
+  height: 300px;
+  grid-area: boo;
+}
+main .section13 .c3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "t3 t3" "goz boch" "goz ss";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c3 .t3 {
+  grid-area: t3;
+}
+main .section13 .c3 .boch {
+  grid-area: boch;
+}
+main .section13 .c3 .ss {
+  grid-area: ss;
+}
+main .section13 .c3 .goz {
+  grid-area: goz;
+}
+main .section13 .c4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "t4 t4" "boathe aos";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c4 .t4 {
+  grid-area: t4;
+}
+main .section13 .c4 .boathe {
+  grid-area: boathe;
+}
+main .section13 .c4 .aos {
+  grid-area: aos;
+}
+main .section13 .c5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "t5 t5" "coh nc" "coh boe";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c5 .t5 {
+  grid-area: t5;
+}
+main .section13 .c5 .boe {
+  grid-area: boe;
+  width: 600px;
+}
+main .section13 .c5 .coh {
+  grid-area: coh;
+  width: 300px;
+}
+main .section13 .c5 .nc {
+  grid-area: nc;
+  width: 500px;
+}
+main .section13 .c6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "t6 t6" "bc bc" "t7 t7" "la gs" "la tb";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c6 .t6 {
+  grid-area: t6;
+}
+main .section13 .c6 .bc {
+  grid-area: bc;
+  width: 600px;
+}
+main .section13 .c6 .t7 {
+  grid-area: t7;
+}
+main .section13 .c6 .la {
+  width: 600px;
+  grid-area: la;
+}
+main .section13 .c6 .gs {
+  width: 300px;
+  grid-area: gs;
+}
+main .section13 .c6 .tb {
+  width: 300px;
+  grid-area: tb;
+}
+main .section13 .c8 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "t8 t8" "ds lax" "ds gsh";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+main .section13 .c8 .t8 {
+  grid-area: t8;
+}
+main .section13 .c8 .lax {
+  width: 350px;
+  grid-area: lax;
+}
+main .section13 .c8 .gsh {
+  width: 300px;
+  grid-area: gsh;
+}
+main .section13 .c8 .ds {
+  grid-area: ds;
+  width: 160px;
+}
+
+main .section-card .game_info div .game__button, main .card2 .game_info div .game__button, main .card3 .game_info div .game__button, main .card5 .game_info div .game__button, main .card6 .game_info div .game__button, main .card8 .game_info div .game__button {
+  border: none;
+  padding: 10px;
+  width: 60%;
+  height: 80px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  background: #000;
+  position: relative;
+  margin: auto;
+}
+main .section-card .game_info div .game__button::after, main .card2 .game_info div .game__button::after, main .card3 .game_info div .game__button::after, main .card5 .game_info div .game__button::after, main .card6 .game_info div .game__button::after, main .card8 .game_info div .game__button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 10%;
+  bottom: 0;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+  transition: 0.2s ease;
+}
+main .section-card .game_info div .game__button::before, main .card2 .game_info div .game__button::before, main .card3 .game_info div .game__button::before, main .card5 .game_info div .game__button::before, main .card6 .game_info div .game__button::before, main .card8 .game_info div .game__button::before {
+  position: absolute;
+  content: "";
+  /*   bottom: 80%; */
+  transform: rotate(180deg);
+  width: 100%;
+  height: 10%;
+  transition: 0.2s ease;
+  /*   bottom:; */
+  z-index: -1;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+}
+main .section-card .game_info div .game__button:hover::after, main .card2 .game_info div .game__button:hover::after, main .card3 .game_info div .game__button:hover::after, main .card5 .game_info div .game__button:hover::after, main .card6 .game_info div .game__button:hover::after, main .card8 .game_info div .game__button:hover::after {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+}
+main .section-card .game_info div .game__button:hover::before, main .card2 .game_info div .game__button:hover::before, main .card3 .game_info div .game__button:hover::before, main .card5 .game_info div .game__button:hover::before, main .card6 .game_info div .game__button:hover::before, main .card8 .game_info div .game__button:hover::before {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+}
+main .section-card .game_info div .game__button .goback, main .card2 .game_info div .game__button .goback, main .card3 .game_info div .game__button .goback, main .card5 .game_info div .game__button .goback, main .card6 .game_info div .game__button .goback, main .card8 .game_info div .game__button .goback {
+  text-decoration: none;
+  margin: 0 auto;
+  align-self: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #F2F3F4;
+  text-align: center;
+}
+
+/*LAYOUTS - MEDIA QUERIES*/
+@media (max-width: 768px) {
+  footer .footer .spin-icon {
+    height: 100px;
+  }
+  footer .footer .footer__section .footer__section_title {
+    font-size: 16px;
+  }
+  footer .footer .footer__section .footer__section_list {
+    font-size: 14px;
+  }
+  footer .footer .footer__section3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  main .section1 {
+    background-repeat: no-repeat;
+  }
+  main .section1 .mainLogo {
+    width: 60%;
+  }
+  main .section1 .section1__title {
+    font-size: 50px;
+  }
+  main .section1 .section1__info {
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+  }
+  main .section1 .section1__info .ps_logo {
+    height: 70px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .sie_logo {
+    height: 70px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .sme_logo {
+    height: 70px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .section1__text {
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(220, 220, 220, 0.467);
+  }
+  main .section1 .section1__info .section1__text .section1__text-p {
+    width: 750px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    text-decoration: none;
+    margin: auto;
+    color: #1B1B1B;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  main .section2 .section2__title {
+    font-size: 50px;
+  }
+  main .section2 .section2__video {
+    width: 700px;
+  }
+  main .section2 .section2__video .iframe {
+    width: 600px;
+  }
+  main .section2 .section2__video .section2__text-p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .section3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section3 .section3__title {
+    font-size: 50px;
+  }
+  .section3 .section3__p {
+    display: none;
+  }
+  .section3 .section3__list li .section3__list_item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  main .section-card .game_logo, main .card2 .game_logo, main .card3 .game_logo, main .card5 .game_logo, main .card6 .game_logo, main .card8 .game_logo {
+    width: 60%;
+  }
+  main .section-card .game_info, main .card2 .game_info, main .card3 .game_info, main .card5 .game_info, main .card6 .game_info, main .card8 .game_info {
+    padding: 20px;
+  }
+  main .section-card .game_info .game_picture, main .card2 .game_info .game_picture, main .card3 .game_info .game_picture, main .card5 .game_info .game_picture, main .card6 .game_info .game_picture, main .card8 .game_info .game_picture {
+    height: 250px;
+  }
+  main .section-card .game_info div .game_text, main .card2 .game_info div .game_text, main .card3 .game_info div .game_text, main .card5 .game_info div .game_text, main .card6 .game_info div .game_text, main .card8 .game_info div .game_text {
+    width: 400px;
+    font-size: 18px;
+  }
+  main .card3 .game_info div .game_text {
+    width: 400px;
+  }
+  main .card6 .game_info div .game_text {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  main .section13 .section13__maintitle {
+    font-size: 50px;
+    padding: 20px 0px;
+  }
+  main .section13 .section13__content {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  main .section13 .section13__content .section13__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  main .section13 .c1 .boc {
+    width: 300px;
+  }
+  main .section13 .c1 .boa {
+    width: 300px;
+  }
+  main .section13 .c2 .boath {
+    width: 300px;
+  }
+  main .section13 .c2 .bh {
+    width: 300px;
+  }
+  main .section13 .c2 .sod {
+    width: 150px;
+  }
+  main .section13 .c2 .boo {
+    width: 150px;
+  }
+  main .section13 .c3 .boch {
+    width: 300px;
+  }
+  main .section13 .c3 .ss {
+    width: 300px;
+  }
+  main .section13 .c3 .goz {
+    width: 300px;
+  }
+  main .section13 .c4 .boathe {
+    width: 300px;
+  }
+  main .section13 .c4 .aos {
+    width: 300px;
+  }
+  main .section13 .c5 .boe {
+    width: 300px;
+  }
+  main .section13 .c5 .coh {
+    width: 300px;
+  }
+  main .section13 .c5 .nc {
+    width: 300px;
+  }
+  main .section13 .c6 .bc {
+    width: 300px;
+  }
+  main .section13 .c6 .la {
+    width: 400px;
+  }
+  main .section13 .c6 .gs {
+    width: 250px;
+  }
+  main .section13 .c6 .tb {
+    width: 250px;
+  }
+  main .section13 .c8 .lax {
+    width: 250px;
+  }
+  main .section13 .c8 .gsh {
+    width: 250px;
+  }
+  main .section13 .c8 .ds {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  main .section14 .section14__title {
+    font-size: 40px;
+  }
+  main .section14 .section14__form {
+    width: 600px;
+    padding: 35px;
+  }
+  main .section14 .section14__form .section14__form_question {
+    font-size: 20px;
+  }
+  main .section14 .section14__form .section14__form_question input {
+    font-size: 18px;
+  }
+  main .section14 .section14__form .section14__form_question select {
+    font-size: 18px;
+  }
+  main .section14 .section14__form .section14__form_question textarea {
+    font-size: 18px;
+  }
+  main .section14 .section14__form .section14__form_question button {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1;
+    height: 60px;
+  }
+}
+@media (max-width: 425px) {
+  footer .footer .spin-icon {
+    height: 100px;
+  }
+  footer .footer .footer__section {
+    margin-bottom: 5px;
+  }
+  footer .footer .footer__section .footer__section_title {
+    font-size: 16px;
+  }
+  footer .footer .footer__section .footer__section_list {
+    font-size: 14px;
+  }
+  footer .footer .footer__section2 {
+    display: none;
+  }
+  footer .footer .footer__section3 {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  main .section1 .mainLogo {
+    width: 60%;
+  }
+  main .section1 .section1__title {
+    font-size: 40px;
+  }
+  main .section1 .section1__info .ps_logo {
+    height: 50px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .sie_logo {
+    height: 50px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .sme_logo {
+    height: 50px;
+    margin: 20px 0px;
+  }
+  main .section1 .section1__info .section1__text {
+    width: 380px;
+  }
+  main .section1 .section1__info .section1__text .section1__text-p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  main .section2 .section2__title {
+    font-size: 40px;
+  }
+  main .section2 .section2__video {
+    width: 380px;
+  }
+  main .section2 .section2__video .iframe {
+    width: 380px;
+    height: 200px;
+  }
+  main .section2 .section2__video .section2__text-p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  main .section3 {
+    background-position: center;
+  }
+  main .section3 .section3__title {
+    font-size: 30px;
+  }
+  main .section3 .section3__list {
+    width: 380px;
+    margin: auto;
+    background-color: rgba(169, 169, 169, 0.2588235294);
+  }
+  main .section3 .section3__list li .section3__list_item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  main .section-card .game_logo, main .card2 .game_logo, main .card3 .game_logo, main .card5 .game_logo, main .card6 .game_logo, main .card8 .game_logo {
+    width: 60%;
+  }
+  main .section-card .game_info, main .card2 .game_info, main .card3 .game_info, main .card5 .game_info, main .card6 .game_info, main .card8 .game_info {
+    padding: 10px;
+    flex-direction: column;
+  }
+  main .section-card .game_info .game_picture, main .card2 .game_info .game_picture, main .card3 .game_info .game_picture, main .card5 .game_info .game_picture, main .card6 .game_info .game_picture, main .card8 .game_info .game_picture {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  main .section-card .game_info div .game_text, main .card2 .game_info div .game_text, main .card3 .game_info div .game_text, main .card5 .game_info div .game_text, main .card6 .game_info div .game_text, main .card8 .game_info div .game_text {
+    width: 380px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .section-card .game_info-mod, main .card2 .game_info-mod, main .card3 .game_info-mod, main .card5 .game_info-mod, main .card6 .game_info-mod, main .card8 .game_info-mod {
+    flex-direction: column-reverse;
+  }
+  main .card3 .game_info div .game_text {
+    width: 380px;
+  }
+  main .card6 .game_info div .game_text {
+    width: 380px;
+  }
+}
+@media (max-width: 425px) {
+  main .section13 .section13__maintitle {
+    font-size: 40px;
+    padding: 10px 0px;
+  }
+  main .section13 .section13__content {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  main .section13 .section13__content .section13__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  main .section13 .c1 .boc {
+    width: 150px;
+  }
+  main .section13 .c1 .boa {
+    width: 150px;
+  }
+  main .section13 .c2 .boath {
+    width: 150px;
+  }
+  main .section13 .c2 .bh {
+    width: 150px;
+  }
+  main .section13 .c2 .sod {
+    width: 75px;
+  }
+  main .section13 .c2 .boo {
+    width: 75px;
+  }
+  main .section13 .c3 .boch {
+    width: 150px;
+  }
+  main .section13 .c3 .ss {
+    width: 150px;
+  }
+  main .section13 .c3 .goz {
+    width: 150px;
+  }
+  main .section13 .c4 .boathe {
+    width: 150px;
+  }
+  main .section13 .c4 .aos {
+    width: 150px;
+  }
+  main .section13 .c5 .boe {
+    width: 150px;
+  }
+  main .section13 .c5 .coh {
+    width: 150px;
+  }
+  main .section13 .c5 .nc {
+    width: 150px;
+  }
+  main .section13 .c6 .bc {
+    width: 150px;
+  }
+  main .section13 .c6 .la {
+    width: 200px;
+  }
+  main .section13 .c6 .gs {
+    width: 125px;
+  }
+  main .section13 .c6 .tb {
+    width: 125px;
+  }
+  main .section13 .c8 .lax {
+    width: 125px;
+  }
+  main .section13 .c8 .gsh {
+    width: 125px;
+  }
+  main .section13 .c8 .ds {
+    width: 70px;
+  }
+}
+@media (max-width: 425px) {
+  main .section14 .section14__title {
+    font-size: 40px;
+  }
+  main .section14 .section14__form {
+    width: 380px;
+    padding: 15px;
+  }
+  main .section14 .section14__form .section14__form_question {
+    font-size: 16px;
+  }
+  main .section14 .section14__form .section14__form_question input {
+    font-size: 14px;
+  }
+  main .section14 .section14__form .section14__form_question select {
+    font-size: 14px;
+  }
+  main .section14 .section14__form .section14__form_question textarea {
+    font-size: 14px;
+  }
+  main .section14 .section14__form .section14__form_question button {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  footer .footer .spin-icon {
+    height: 80px;
+  }
+  footer .footer .footer__section {
+    margin-bottom: 5px;
+  }
+  footer .footer .footer__section .footer__section_title {
+    font-size: 14px;
+  }
+  footer .footer .footer__section .footer__section_list {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  main .section1 .mainLogo {
+    width: 60%;
+  }
+  main .section1 .section1__title {
+    font-size: 30px;
+  }
+  main .section1 .section1__info .ps_logo {
+    height: 30px;
+  }
+  main .section1 .section1__info .sie_logo {
+    height: 30px;
+  }
+  main .section1 .section1__info .sme_logo {
+    height: 30px;
+  }
+  main .section1 .section1__info .section1__text {
+    width: 280px;
+  }
+  main .section1 .section1__info .section1__text .section1__text-p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  main .section2 .section2__title {
+    font-size: 30px;
+  }
+  main .section2 .section2__video {
+    width: 280px;
+  }
+  main .section2 .section2__video .iframe {
+    width: 280px;
+    height: 150px;
+  }
+  main .section2 .section2__video .section2__text-p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  main .section3 {
+    background-position: center;
+  }
+  main .section3 .section3__title {
+    font-size: 30px;
+  }
+  main .section3 .section3__list {
+    width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  main .section-card .game_logo, main .card2 .game_logo, main .card3 .game_logo, main .card5 .game_logo, main .card6 .game_logo, main .card8 .game_logo {
+    width: 60%;
+  }
+  main .section-card .game_info .game_picture, main .card2 .game_info .game_picture, main .card3 .game_info .game_picture, main .card5 .game_info .game_picture, main .card6 .game_info .game_picture, main .card8 .game_info .game_picture {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  main .section-card .game_info div .game_text, main .card2 .game_info div .game_text, main .card3 .game_info div .game_text, main .card5 .game_info div .game_text, main .card6 .game_info div .game_text, main .card8 .game_info div .game_text {
+    width: 280px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .section-card .game_info-mod, main .card2 .game_info-mod, main .card3 .game_info-mod, main .card5 .game_info-mod, main .card6 .game_info-mod, main .card8 .game_info-mod {
+    flex-direction: column-reverse;
+  }
+  main .card3 .game_info div .game_text {
+    width: 280px;
+  }
+  main .card6 .game_info div .game_text {
+    width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  main .section13 .section13__maintitle {
+    font-size: 30px;
+    padding: 10px 0px;
+  }
+  main .section13 .section13__content {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  main .section13 .section13__content .section13__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 320px) {
+  main .section13 .c1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t1" "boc" "boa";
+  }
+  main .section13 .c2 {
+    grid-template-columns: 2fr;
+    grid-template-areas: "t2 t2" "boath boath" "sod boo" "bh bh";
+  }
+  main .section13 .c3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t3" "boch" "ss" "goz";
+  }
+  main .section13 .c4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t4" "boathe" "aos";
+  }
+  main .section13 .c4 .aos {
+    width: 250px;
+  }
+  main .section13 .c5 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t5" "boe" "coh" "nc";
+  }
+  main .section13 .c5 .coh {
+    width: 100px;
+  }
+  main .section13 .c6 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t6" "bc" "t7" "la" "gs" "tb";
+  }
+  main .section13 .c8 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t8" "lax" "gsh" "ds";
+  }
+}
+@media (max-width: 320px) {
+  main .section14 .section14__title {
+    font-size: 30px;
+  }
+  main .section14 .section14__form {
+    width: 280px;
+    padding: 10px;
+  }
+  main .section14 .section14__form .section14__form_question {
+    font-size: 14px;
+  }
+  main .section14 .section14__form .section14__form_question input {
+    font-size: 12px;
+  }
+  main .section14 .section14__form .section14__form_question select {
+    font-size: 12px;
+  }
+  main .section14 .section14__form .section14__form_question textarea {
+    font-size: 12px;
+  }
+  main .section14 .section14__form .section14__form_question button {
+    font-size: 14px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

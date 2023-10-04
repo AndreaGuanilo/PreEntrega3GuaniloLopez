@@ -1,0 +1,46 @@
+footer {
+    .footer {
+        @include flex (row, space-around, center, none, none);
+        background-color: #00439c;
+        .spin-icon {
+            height: 150px;
+            transform: rotate(-15deg); 
+            animation: rotation linear 6s infinite; /*Aquí configuramos la duración de la animación y el bucle*/
+        }
+        .footer__section {
+            margin-bottom: .625rem;
+            .footer__section_title {
+                font-family: $default-font;
+                color: #F2F3F4;
+                margin: auto;
+                margin-top: .9375rem;
+                margin-bottom: .9375rem;
+            }
+            .footer__section_list {
+                list-style: none;
+                overflow: auto;
+                li {
+                    .footer__section_listitem {
+                        text-decoration: none;
+                        font-family: $default-font;
+                        color: #F2F3F4;
+                        line-height: 1.6;
+                    }
+                }
+            }
+            .footer__section_list-media {
+                @include flex (row, space-around, center, none, wrap);
+                list-style: none;
+                overflow: auto;
+                li {
+                    a {
+                        .media_logo {
+                            height: 3.125rem;
+                            padding: 0rem .625rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+main {
+    .section13 {
+        .c1 {
+            @include grid (repeat(2, 1fr), repeat(2, 1fr), "t1 t1" "boc boa", 10px, center, center);
+            ;
+            .t1 {
+                grid-area: t1;
+            }
+            .boc {
+                grid-area: boc;
+            }
+            .boa {
+                grid-area: boa;
+            }
+        }
+        .c2 {
+            @include grid (repeat(3, 1fr), repeat(2, 1fr),"t2 t2 t2" "boath boath bh" "sod boo bh", 10px, center, center);
+            .t2 {
+                grid-area: t2;
+            }
+            .boath {
+                grid-area: boath;
+            }
+            .bh {
+                grid-area: bh;
+                width: 400px;
+            }
+            .sod {
+                height: 300px;
+                grid-area: sod;
+            }
+            .boo {
+                height: 300px;
+                grid-area: boo;
+            }
+        }
+        .c3 {
+            @include grid (repeat(2, 1fr), repeat(2, 1fr),"t3 t3" "goz boch" "goz ss", 10px, center, center);
+            .t3 {
+                grid-area: t3;
+            }
+            .boch {
+                grid-area: boch;
+            }
+            .ss {
+                grid-area: ss;
+            }
+            .goz {
+                grid-area: goz;
+            }
+        }
+        .c4 {
+            @include grid (repeat(2, 1fr), repeat(2, 1fr),"t4 t4" "boathe aos", 10px, center, center);
+            .t4 {
+                grid-area: t4;
+            }
+            .boathe {
+                grid-area: boathe;
+            }
+            .aos {
+                grid-area: aos;
+            }
+        }
+        .c5 {
+            @include grid (repeat(2, 1fr), repeat(2, 1fr),"t5 t5" "coh nc" "coh boe", 10px, center, center);
+            .t5 {
+                grid-area: t5;
+            }
+            .boe {
+                grid-area: boe;
+                width: 600px;
+            }
+            .coh {
+                grid-area: coh;
+                width: 300px;
+            }
+            .nc {
+                grid-area: nc;
+                width: 500px;
+            }
+        }
+        .c6 {
+            @include grid (repeat(2, 1fr), repeat(5, 1fr),"t6 t6" "bc bc" "t7 t7" "la gs" "la tb", 10px, center, center);
+            .t6 {
+                grid-area: t6;
+            }
+            .bc {
+                grid-area: bc;
+                width: 600px;
+            }
+            .t7 {
+                grid-area: t7;
+            }
+            .la {
+                width: 600px;
+                grid-area: la;
+            }
+            .gs {
+                width: 300px;
+                grid-area: gs;
+            }
+            .tb {
+                width: 300px;
+                grid-area: tb;
+            }
+        }
+        .c8 {
+            @include grid (repeat(2, 1fr), repeat(3, 1fr),"t8 t8" "ds lax" "ds gsh", 10px, center, center);
+            .t8 {
+                grid-area: t8;
+            }
+            .lax {
+                width: 350px;
+                grid-area: lax;
+            }
+            .gsh {
+                width: 300px;
+                grid-area: gsh;
+            }
+            .ds {
+                grid-area: ds;
+                width: 160px;
+            }
+        }
+    }
+}

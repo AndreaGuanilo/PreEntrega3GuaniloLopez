@@ -1,0 +1,34 @@
+body {
+  header {
+    .navbar {
+      margin: auto;
+      background-color: $bg-light;
+      .container-fluid {
+        .navbar-toggler {
+            .navbar-toggler-icon {
+              background-image: url(../../assets/img/gow_icon.png);
+              background-size: cover;
+            }
+          }
+        }
+          .collapse {
+            .navbar-nav {
+              gap: 3.125rem;
+              margin: auto;
+              .nav-item {
+                .navbar__link {
+                  color: #1b1b1b;
+                  font-size: 1.625rem;
+                  font-family: gow;
+                  font-weight: bold;
+                  text-align: center;
+                  &:hover {
+                  text-shadow: 4px 4px 5px red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
